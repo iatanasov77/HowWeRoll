@@ -52,5 +52,6 @@ public class MaintenanceRequestHelper {
         }
         
         insert newMaintenanceRequests;
+        System.debug( 'EHO' );
     }            
 }

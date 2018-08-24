@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -68,25 +64,27 @@
         <fullName>Awning__c</fullName>
         <externalId>false</externalId>
         <label>Awning</label>
-        <picklist>
-            <picklistValues>
-                <fullName>None</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Manual</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Electric</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>None</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Manual</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Electric</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Backup_Camera_Monitor__c</fullName>
@@ -101,25 +99,27 @@
         <fullName>Bathroom_Hookup__c</fullName>
         <externalId>false</externalId>
         <label>Bathroom Hookup</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Walk-In Shower</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Tub/Shower Combo</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No Shower</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Walk-In Shower</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Tub/Shower Combo</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No Shower</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Bathrooms__c</fullName>
@@ -167,21 +167,23 @@
         <fullName>Levelers__c</fullName>
         <externalId>false</externalId>
         <label>Levelers</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Automatic</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Manual</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Automatic</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Manual</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>License_Plate__c</fullName>
@@ -220,25 +222,27 @@
         <fullName>Power__c</fullName>
         <externalId>false</externalId>
         <label>Power</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Diesel-Powered Class B</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Front-Engine Diesel</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Regular Diesel</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Diesel-Powered Class B</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Front-Engine Diesel</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Regular Diesel</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Propane_Tank__c</fullName>
@@ -292,25 +296,27 @@
         <fullName>Type__c</fullName>
         <externalId>false</externalId>
         <label>Type</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Luxury</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Mid-Range</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Economy</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Luxury</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mid-Range</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Economy</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>VIN_Number__c</fullName>
