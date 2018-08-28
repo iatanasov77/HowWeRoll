@@ -34,7 +34,7 @@ public class MaintenanceRequestTest {
     public static Case createMaintenanceRequest(Vehicle__c vehicle, String requestType){
         Case request = new Case();
         request.Vehicle__c = vehicle.id;
-        request.Type = requestType;		       
+        request.Type = requestType;
         
         return request;
     }
@@ -71,7 +71,7 @@ public class MaintenanceRequestTest {
         Test.stopTest();        
     }
 
-    @isTest static  void testCreateAndCloseRepairRequest() {                     
+    @isTest static  void testCreateAndCloseRepairRequest() {  
         Test.startTest();
         
         List<Vehicle__c> vehicles = new List<Vehicle__c>();        
@@ -83,7 +83,7 @@ public class MaintenanceRequestTest {
             vehicles.add(createVehicle('Vehicle' + i));
         }
         
-        insert vehicles;
+        Database.insert( vehicles );
         
         //Create requests
         for(Vehicle__c vehicle: vehicles){           
@@ -93,12 +93,12 @@ public class MaintenanceRequestTest {
             vehicleIds.add(vehicle.id);
         }
         
-        insert requests;
+        Database.insert( requests );
 		
 		List<Case> results = [SELECT Id, CaseNumber FROM Case 
                               WHERE Vehicle__c in :vehicleIds];
         
-        System.assertEquals(vehicleIds.size()*2, results.size());        
+        System.assertEquals( vehicleIds.size()*2, results.size() );        
         
         Test.stopTest();
     }        
